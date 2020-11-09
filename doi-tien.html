@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen doi tien</title>
+    <script type="text/javascript" src="money.js"></script>
+</head>
+<form>
+    <table style="table-layout: fixed; text-align: center">
+        <tr>
+            <th>Amount</th>
+            <th>Form currency</th>
+            <th>To currency</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="number" id="amount" value="1"></td>
+            <td><select id="tienvao">
+                <option name="dau vao" value="1">VND</option>
+                <option name="dau vao" value="23000">USD</option>
+                <option name="dau vao" value="3500">CNY</option>
+                <option name="dau vao" value="200">Y</option>
+            </select></td>
+            <td><select id="tienra">
+                <option name="dau ra" value="1">VND</option>
+                <option name="dau ra" value="23000">USD</option>
+                <option name="dau ra" value="3500">CNY</option>
+                <option name="dau ra" value="200">Y</option>
+            </select></td>
+            <td><button type="button" onclick="convert()", style="background-color: blueviolet;
+            color: white; border: none">convert</button></td>
+        </tr>
+    </table>
+<h1 id="result" style="color: blue; font-size: 20px" ></h1>
+</form>
+</body>
+</html>
